@@ -7,4 +7,11 @@ export async function fetchApi() {
 
   const req3 = await fetch("https://api.mercadolibre.com/sites/MLB/search?q=bateria");
   const res3 = await req3.json();
+
+  const resultado = {
+    teclado: res1,
+    piano: res2,
+    bateria: res3,
+  }
+  return resultado
 }
